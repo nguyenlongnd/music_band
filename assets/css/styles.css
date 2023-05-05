@@ -171,7 +171,7 @@ html {
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url(/assets/img/slider/slider-1.jpg) no-repeat center / cover;
+    background: url(../img/slider/slider-1.jpg) no-repeat center / cover;
     z-index: -1;
 }
 
