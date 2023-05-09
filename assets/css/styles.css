@@ -54,7 +54,6 @@ html {
 .subNav>li:hover>a {
     color: #000;
     background-color: #ccc;
-
 }
 
 #nav>li:hover .subNav {
@@ -145,26 +144,30 @@ html {
     z-index: 10;
     display: none;
 }
-
-.subnav-tablet-show {
-    position: fixed;
-    background-color: #000;
-    top: 46px;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    display: block;
+.subnav-tablet ul li{
+    list-style: none;
 }
-
+.subnav-tablet-show {
+    display: block;
+    animation: fly-in 0.5s ease-in;
+}
+@keyframes fly-in {
+    from {
+        left: 601px;
+    }
+    to {
+        left: 0;
+    }
+}
 .subnav-tablet a {
     color: #fff;
     display: block;
     padding: 12px 24px;
     text-decoration: none;
+    list-style: none;
     font-size: 16px;
     text-transform: uppercase;
 }
-
 
 /* slider */
 #slider {
@@ -390,17 +393,12 @@ html {
 @keyframes fadeIn {
     from {
         top: -400px;
-        opacity: 0.5
+        opacity: 0.5;
     }
-
-    ;
-
     to {
         top: 100px;
-        opacity: 1
+        opacity: 1;
     }
-
-    ;
 }
 
 
@@ -597,6 +595,10 @@ html {
 
 .footer-icon {
     font-size: 20px;
+}
+.footer-icon i:hover,
+.footer-icon span:hover{
+    opacity: 0.7;
 }
 
 .footer-source {
